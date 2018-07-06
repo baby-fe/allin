@@ -1,0 +1,215 @@
+@value settings: "./settings.css";
+@value fontSizeBase, mainColor, mainColor1, mainColor2, mainColor3, mainColor4, mainColor5, mainColor6, mainColorRed, mainColorBlue from settings;
+/**
+	css规范：（+为驼峰式分隔）
+	组件样式：组件名称+内部业务模块名+当前标签名
+	通用样式：属性名首字母缩写加属性值首字母缩写+样式扩散
+	动画样式：动画效果_方向
+*/
+:global(#root) {
+  height: 100%;
+}
+
+:global(.fade_in) {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/**
+ * common font color style
+ * @param  {[type]} .fontColor_black [description]
+ * @return {[type]}                  [description]
+ */
+
+:global(.fc) {
+  color: mainColor1;
+}
+
+:global(.fcTitle) {
+  color: mainColor2;
+}
+
+:global(.fcDesc) {
+  color: mainColor3;
+}
+
+:global(.fcAssist) {
+  color: mainColor4;
+}
+
+:global(.fcLight) {
+  color: mainColor5;
+}
+
+:global(.fcDark) {
+  color: mainColor;
+}
+
+:global(.fcWarn) {
+  color: mainColorRed;
+}
+
+:global(.fcBlue) {
+  color: mainColorBlue;
+}
+
+:global(.fcWarn) {
+  color: mainColorRed;
+}
+
+/**
+ * common backgroundColor style
+ * @param  {[type]}  [description]
+ * @return {[type]}                  [description]
+ */
+
+:global(.bg) {
+  background-color: mainColor6;
+}
+
+/**
+ * common margin style
+ * @param  {[type]} .marginLeft_10 [description]
+ * @return {[type]}                [description]
+ */
+
+:global(.ml10) {
+  margin-left: 10px;
+}
+
+:global(.mr10) {
+  margin-right: 10px;
+}
+
+:global(.mt10) {
+  margin-top: 10px;
+}
+
+:global(.mb10) {
+  margin-bottom: 10px;
+}
+
+:global(.ml20) {
+  margin-left: 20px;
+}
+
+:global(.mr20) {
+  margin-right: 20px;
+}
+
+:global(.mt20) {
+  margin-top: 20px;
+}
+
+:global(.mb20) {
+  margin-bottom: 20px;
+}
+
+/**
+ * common padding style
+ * @param  {[type]} .paddingLeft_10 [description]
+ * @return {[type]}                 [description]
+ */
+
+:global(.pl10) {
+  padding-left: 10px;
+}
+
+:global(.pr10) {
+  padding-right: 10px;
+}
+
+:global(.pt10) {
+  padding-top: 10px;
+}
+
+:global(.pb10) {
+  padding-bottom: 10px;
+}
+
+:global(.pl20) {
+  padding-left: 20px;
+}
+
+:global(.pr20) {
+  padding-right: 20px;
+}
+
+:global(.pt20) {
+  padding-top: 20px;
+}
+
+:global(.pb20) {
+  padding-bottom: 20px;
+}
+
+/**
+ * common display style
+ * @param  {[type]} .display_none [description]
+ * @return {[type]}               [description]
+ */
+
+:global(.dn) {
+  display: none
+}
+
+:global(.db) {
+  display: block;
+}
+
+:global(.df) {
+  display: flex;
+}
+
+:global(.dib) {
+  display: inline-block;
+}
+
+:global(.bsbb) {
+  box-sizing: border-box;
+}
+
+/**
+ * common position style
+ * @param  {[type]} .position_absolute [description]
+ * @return {[type]}                    [description]
+ */
+
+:global(.pa) {
+  position: absolute;
+}
+
+:global(.pr) {
+  position: relative;
+}
+
+:global(.pf) {
+  position: fixed;
+}
+
+/**
+ * common float style
+ * @param  {[type]} .float_left [description]
+ * @return {[type]}             [description]
+ */
+
+:global(.fl) {
+  float: left;
+}
+
+:global(.fr) {
+  float: right;
+}
+
+/***********************************************************/

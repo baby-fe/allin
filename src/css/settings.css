@@ -1,0 +1,16 @@
+@value mainColor: #000000;
+@value mainColor1: #333333;
+@value mainColor2: #666666;
+@value mainColor3: #999999;
+@value mainColor4: #d9d9d9;
+@value mainColor5: #f5f5f5;
+@value mainColor6: #f8f8f8;
+@value mainColorRed: #ff0000;
+@value mainColorBlue: #0076ff;
+
+
+@value fontSizeBase: 14px;
+@value fontSizeSmall: 12px;
+@value fontSizeLarge: 16px;
+@value fontSizeXl: 20px;
+@value fontSizeXs: 8px;

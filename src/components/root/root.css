@@ -1,0 +1,17 @@
+.rootHeader{
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+}
+.rootMenu{
+
+}
+.rootHeaderMsg{
+	display: inline-block;
+	color: #ffffff;
+}
+.rootAvatarImg{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
